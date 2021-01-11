@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tareas app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Navegacion -->
+    <nav class="navbar">
+      <div class="logo">
+        <h1>Tareas</h1>
+      </div>
+    </nav>
+
+    <!--Contenido principal-->
+    <main class="contenedor">
+      <div class="form">
+        <form class="formulario" action="" id="formTarea">
+          <input
+            id="titulo"
+            type="text"
+            class="border"
+            placeholder="Agregar tarea"
+          />
+          <textarea
+            class="border"
+            id="descripcion"
+            cols="30"
+            rows="10"
+            placeholder="Agrega una descripción"
+          ></textarea>
+          <button class="btn-guardar" type="submit">Guardar</button>
+        </form>
+      </div>
+      <div class="tarea" id="tarea"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
